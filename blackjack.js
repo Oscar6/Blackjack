@@ -95,10 +95,17 @@ function getCardImgUrl(card) {
 }
 
 // Step 8: Calculate points
-var calculatePoints
-function calculatePoints() {[
-    for ()
-]}
+
+function calculatePoints(playerPoints) {
+    var playerPoints = 0;
+        for(var i = 0; i < playerCards.length; i++) {
+            card = playerCards[i];
+            var point = card.points;
+            playerPoints += point;
+            // playerPoints = playerPoints + point
+        }   return playerPoints;
+}  
+console.log(calculatePoints());
 
 // Step 9: Shuffle the deck
 // function shuffleArray(array) {
